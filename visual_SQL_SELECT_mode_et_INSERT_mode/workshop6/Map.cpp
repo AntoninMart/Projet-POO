@@ -16,6 +16,9 @@ System::String^ compMappage::Map::Insert(void)
 
 
 
+
+
+
 System::String^ compMappage::Map::Delete(void)
 {
 	return "DELETE FROM Personne WHERE nom = '" + this->nom + "', prenom = '" + this->prenom + "';";
