@@ -1,0 +1,136 @@
+idAdresse,ligne,code_postale,ville,pays,AdresseLivraison,AdresseFacturation,activite_adresse
+1,8 E. Plumb Lane,37093,Surat,Malaysia,True,False,False
+2,249 Village Road South,38460,TRIPOLI,Armenia,True,False,False
+3,5 Penny Lane,83235,LONDON,Hong Kong,True,False,False
+4,29 Robin Lane,59879,Handan,Turkmenistan,True,False,False
+5,9829 Sutter St,19998,Taejon,Gabon,True,False,False
+6,72 Main St.,76969,Fuzhou,Haiti,True,False,False
+7,79 N York Dr,41769,Lucknow,Liberia,True,False,False
+8,9874 Harrison rd,98163,Yixing,Argentina,True,False,False
+9,648 Melrose Ave,36275,Ufa,Comoros,True,False,False
+10,1 Everglades Road,83087,Izmir,Indonesia,True,False,False
+11,247 One Park Avenue,04422,KUALA LUMPUR,Taiwan,True,False,False
+12,4 Reeves Place,71385,RIYADH,Palau,True,False,False
+13,9357 Woodcote Valley Road,57156,Fengcheng,United States,True,False,False
+14,0 Station Street,84976,Medan,Lesotho,True,False,False
+15,2135 Roan Lane,87347,Omsk,Poland,True,False,False
+16,2 Eisenhower Avenue,04887,RIYADH,Uruguay,True,False,False
+17,5 One Park Avenue,62643,Palembang,Cameroon,False,True,False
+18,8309 N. Central Ave.,62785,Guayaquil,Comoros,False,True,False
+19,1 Springfield Ave,87972,NAIROBI,American Samoa,False,True,False
+20,886 Serena Road,37431,Fuzhou,Nauru,False,True,False
+21,910 Medford St,67199,Adana,Mexico,False,True,False
+22,2961 Durness Place,49288,Pakalongan,Armenia,False,True,False
+23,1426 Pacella Park Drive,57154,Davao,Turkmenistan,False,True,False
+24,4135 Fontanoso Way,12010,Warsaw,Guatemala,False,True,False
+25,0 Broomhouse Rd,75423,MANILA,Saudi Arabia,False,True,False
+26,104 Carnaby Creek,47645,Heze,Pakistan,False,True,False
+27,1789 Centerville Drive,74103,Indore,Grenada,False,True,False
+28,922 Sulgrave Ave,43567,Medan,Dominican Republic,False,True,False
+29,0 Sarasota St.,09760,TOKYO,Cameroon,False,True,False
+30,4 Southwest Blvd,95904,Wuhan,Eritrea,False,True,False
+31,0 Swan Way,97836,Madras,S. Georgia and S. Sandwich Isls.,False,True,False
+32,58 West 53th Street,60767,Chaozhou,Saudi Arabia,False,True,False
+33,8733 Brandon Marshall Street,79663,Bogor,Mexico,False,True,False
+34,1 Weber Street North,27370,Adelaide,Egypt,True,True,False
+35,2021 N Broadway,61703,Qinzhou,Peru,True,True,False
+36,9846 Madden Blvd.,58028,Kampong Cham,Lebanon,True,True,False
+37,525 Buckthorn Lane,64572,Suining,Slovak Republic,True,True,False
+38,19 Simpson Road,65952,Sapporo,Morocco,True,True,False
+39,8840 Barrenger Dr.,25980,Sapporo,Lesotho,True,True,False
+40,7221 Chalmette Court,73642,Lucknow,Afghanistan,True,True,False
+41,6 Redwood Ave.,60512,Novosibirsk,Namibia,True,True,False
+42,026 Palos Verdes Mall,37111,Guiyang,Cameroon,True,True,False
+43,7262 Redwood Ave.,75867,Dallas (TX),Andorra,True,True,False
+44,5 S. Brackbank Dr,20662,Esfahan,France,True,True,False
+45,080 Glenridge Drive,63351,RIYADH,Morocco,True,True,False
+46,2 Braemar Drive,36215,Almaty,France,True,True,False
+47,3 Tuckahoe St,83561,BUENOS AIRES,Czechoslovakia (former),True,True,False
+48,3 Simpson Avenue,82088,BAKU,Australia,True,True,False
+49,3 Willingdon Ave,08461,Xiaogan,Czechoslovakia (former),True,True,False
+50,5538 Penny Lane,24777,Chengdu,Marshall Islands,True,True,False
+51,34 Canyon Crest Drive,53708,Hefei,Sierra Leone,True,False,True
+52,679 N Broadway,64528,Córdoba,Korea (North),True,False,True
+53,8922 Amadonna Road,32612,BOGOTA,S. Georgia and S. Sandwich Isls.,True,False,True
+54,35 High Palms Ave,03787,TEHRAN,Lesotho,True,False,True
+55,840,48309,Ahmedabad,Pakistan,True,False,True
+56,6 Spottswood Drive,59234,Perm,Cote D'Ivoire (Ivory Coast),True,False,True
+57,9 S. Riverside Plaza,67958,Fortaleza,Suriname,True,False,True
+58,082 N. Deerwood Avenue,10251,Los Angeles,Afghanistan,True,False,True
+59,643 Floribunda Ave,86643,Hiroshima,Malaysia,True,False,True
+60,543 West 89th Street,92352,BEIJING,Kiribati,True,False,True
+61,182 Springfield Ave,01510,Chaozhou,Russian Federation,True,False,True
+62,760 Fairfield Road,88813,Macheng,Mauritius,True,False,True
+63,6634 Melrose Ave,74708,Lahore,Guam,True,False,True
+64,0915 N. Jackson Place,24018,Zaozhuang,Brazil,True,False,True
+65,4 Main St.,49400,BAKU,Lithuania,True,False,True
+66,3041 Elm Waterford Drive,74009,Kalyan,US Minor Outlying Islands,True,False,True
+67,90 Devonshire Rd,73539,Huaian,French Guiana,True,False,True
+68,4 Cheltenham Road,87952,AMMAN,Lesotho,False,True,True
+69,920 Woodcote Valley Road,98729,Volgograd,El Salvador,False,True,True
+70,8323 Dairy Rd,38925,Dingzhou,Iceland,False,True,True
+71,5980 Windbrook Crs,79922,Chittagong,Fiji,False,True,True
+72,032 Bryant Street,06588,TBILISI,Ireland,False,True,True
+73,79 Mercury Drive,79690,Huaian,Dominican Republic,False,True,True
+74,826 Willingdon Ave,91649,Zhucheng,Guinea-Bissau,False,True,True
+75,3 Glenridge Drive,50220,Tianjin,Dominica,False,True,True
+76,3 S. Maryland Ave,01461,Tangshan,St. Helena,False,True,True
+77,340 High Palms Ave,93499,BUDAPEST,New Caledonia,False,True,True
+78,6 N. Sherman Dr.,29627,Kharkov,Heard and McDonald Islands,False,True,True
+79,98 Palmer Rd,71658,Maracaibo,Sudan,False,True,True
+80,6892 Chesterfield Road South,68281,Dar es Salaam,Lebanon,False,True,True
+81,106,35306,Perm,Niger,False,True,True
+82,567 Printing House Yard,22054,Hyderabad,Andorra,False,True,True
+83,98 Fairfield Road,54838,Omdurman,United Kingdom,False,True,True
+84,43 River Rd,82794,BUENOS AIRES,Pakistan,False,True,True
+85,70 N York Dr,77481,CARACAS,Sao Tome and Principe,True,True,True
+86,46 Crookston Lane,63425,Toronto,Monaco,True,True,True
+87,4 Village Road East,03272,Alexandria,Mauritania,True,True,True
+88,9943 Lindstrom Rd,93066,Lucknow,Austria,True,True,True
+89,562 Northpark Blvd,94996,Sapporo,Kiribati,True,True,True
+90,60 Everglades Way,46654,Leshan,Namibia,True,True,True
+91,60 Willingdon Ave,16650,Baotou,Djibouti,True,True,True
+92,5484 Durness Place,12455,AMMAN,Cote D'Ivoire (Ivory Coast),True,True,True
+93,74 Wilder St.,28452,Jiangyin,Malawi,True,True,True
+94,0 Chinook Dr.,59024,Kharkov,Antarctica,True,True,True
+95,10 Southwest Blvd,86373,Handan,Bolivia,True,True,True
+96,6526 N. Glenoaks Blvd,30116,Yixing,Belarus,True,True,True
+97,5 Muzzatta Way,28767,La Matanza,Ireland,True,True,True
+98,80 Sulgrave Lane,77547,Caloocan,St. Pierre and Miquelon,True,True,True
+99,32 Highland Drive,94373,Xian,Sweden,True,True,True
+100,7561 Jefferson Ave,76365,Davao,Pitcairn,True,True,True
+101,781 Willowcrest,23757,Milano,Antigua and Barbuda,True,True,True
+102,83 Close Gardens Court,23430,Medellín,Neutral Zone,False,False,True
+103,8 Weber Street North,22603,Xinghua,Albania,False,False,True
+104,954 ZW Bruce Street,62681,Shijiazhuang,Slovak Republic,False,False,True
+105,769 Waterford Blvd,19402,Dengzhou,Yemen,False,False,True
+106,0 Main St.,29031,Hefei,Monaco,False,False,True
+107,3 Clearwater Pkwy,60288,Birmingham,Bulgaria,False,False,True
+108,87 Prospect Hill,56262,Jimo,Belarus,False,False,True
+109,3 Stony Field Rd,88160,Pusan,Brazil,False,False,True
+110,8793 Highland Drive,86011,Qinzhou,New Zealand (Aotearoa),False,False,True
+111,15 Foxway,69758,Baotou,Haiti,False,False,True
+112,4 Shallowford Rd,39870,Chengdu,Western Sahara,False,False,True
+113,265 Willingdon Ave,25032,Belgrade,Ukraine,False,False,True
+114,0322 E. Plumb Lane,77562,Prague,Ukraine,False,False,True
+115,639 S. Brockbank Drive,28194,Multan,Antigua and Barbuda,False,False,True
+116,4 E. Marions Rd,01251,Tianshui,Thailand,False,False,True
+117,37 Hidden Valley Drive,81662,Prague,Norfolk Island,False,False,True
+118,017 Dairy Rd,20519,Yixing,S. Georgia and S. Sandwich Isls.,False,False,True
+119,95 Waterford Blvd,34349,BOGOTA,Monaco,False,False,False
+120,48 Danielle Ct.,29113,Suqian,Slovenia,False,False,False
+121,0 Acorn Dr.,52568,Xinghua,Comoros,False,False,False
+122,4597 Lindstrom Rd,51899,Calcutta,Austria,False,False,False
+123,4 Muzzatta Way,90242,Huainan,Niger,False,False,False
+124,4 Crookston Lane,48150,YANGON,Bouvet Island,False,False,False
+125,74 Summer Drive,44753,Jingmen,Nepal,False,False,False
+126,49 Braemar Drive,50970,Faisalabad,Taiwan,False,False,False
+127,065 East 74th Street,61683,Omsk,Lebanon,False,False,False
+128,2 South 9th Street,10144,Baotou,Guadeloupe,False,False,False
+129,1558 27th Street North,54435,Shenyang,Slovenia,False,False,False
+130,02 South MacArthur,60314,Lucknow,Turks and Caicos Islands,False,False,False
+131,802 New London Street,60387,Faisalabad,Mauritania,False,False,False
+132,92 Elm Drive,18557,Novosibirsk,Luxembourg,False,False,False
+133,19 E. Broward Blvd.,65569,St Petersburg,Bouvet Island,False,False,False
+134,9518 Devonshire Rd,29017,Hyderabad,Cayman Islands,False,False,False
+135,1 River Rd,77423,BUENOS AIRES,Cook Islands,False,False,False

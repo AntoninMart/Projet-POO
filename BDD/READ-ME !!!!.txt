@@ -1,0 +1,110 @@
+
+1 Créer une base de données vide
+
+
+2 Clique droits sur la bbd -> Tâches -> Importer des données.
+
+	2.1 Un assistant se lance, appuyer sur next.
+
+	2.2 Sélectionner dans "Source de données" Flat File Source, puis cliquer sur "parcourir" 
+	et sélectionner le fichier (Par exemple "Adresse.txt") à ajouter, puis appuyer sur next 2x.
+
+	2.3 Sélectionner dans "Destination" SQL Server Native Client 11.0 
+	et rentrer les informations de votre serveur (Nom du server : localhost, 
+	Nom d'utilisateur : sa, mdp : *****, Base de données : le nom de votre bdd vide), 
+	puis appuyer sur next.
+
+	2.4 Cliquer sur "Modifier les mappages" puis "modifier SQL" et copier-coller la requête sql
+	de création de la table dans le fichier "requêtes sql" (choisissez en fonction de la table qu'on ajoute).
+
+	2.5 cliquer sur "OK" puis "OK" puis "NEXT" puis "NEXT" puis "FINISH"
+
+3 Répéter l'étape 2 pour toutes les tables
+
+4 Ensuite exécuter la requête sql suivante : 
+
+ALTER TABLE Client
+	ADD CONSTRAINT Client_Personne0_FK
+	FOREIGN KEY (idPersonne)
+	REFERENCES Personne(idPersonne);
+
+ALTER TABLE Client 
+	ADD CONSTRAINT Client_Personne0_AK 
+	UNIQUE (idPersonne);
+
+ALTER TABLE Commande
+	ADD CONSTRAINT Commande_Client0_FK
+	FOREIGN KEY (code_client)
+	REFERENCES Client(code_client);
+
+ALTER TABLE Commande
+	ADD CONSTRAINT Commande_Adresse1_FK
+	FOREIGN KEY (idAdresse_livraison)
+	REFERENCES Adresse(idAdresse);
+
+ALTER TABLE Commande
+	ADD CONSTRAINT Commande_Adresse2_FK
+	FOREIGN KEY (idAdresse_facturation)
+	REFERENCES Adresse(idAdresse);
+
+ALTER TABLE Tarif_lot
+	ADD CONSTRAINT Tarif_lot_Article0_FK
+	FOREIGN KEY (idArticle)
+	REFERENCES Article(idArticle);
+
+ALTER TABLE Facture
+	ADD CONSTRAINT Facture_Commande0_FK
+	FOREIGN KEY (idCommande)
+	REFERENCES Commande(idCommande);
+
+ALTER TABLE Facture 
+	ADD CONSTRAINT Facture_Commande0_AK 
+	UNIQUE (idCommande);
+
+ALTER TABLE Paiement
+	ADD CONSTRAINT Paiement_Facture0_FK
+	FOREIGN KEY (idFacture)
+	REFERENCES Facture(idFacture);
+
+ALTER TABLE ligne_facture
+	ADD CONSTRAINT ligne_facture_Facture0_FK
+	FOREIGN KEY (idFacture)
+	REFERENCES Facture(idFacture);
+
+ALTER TABLE Posseder3
+	ADD CONSTRAINT Posseder3_Adresse0_FK
+	FOREIGN KEY (idAdresse)
+	REFERENCES Adresse(idAdresse);
+
+ALTER TABLE Posseder3
+	ADD CONSTRAINT Posseder3_Personne1_FK
+	FOREIGN KEY (idPersonne)
+	REFERENCES Personne(idPersonne);
+
+ALTER TABLE Contenir
+	ADD CONSTRAINT Contenir_Article0_FK
+	FOREIGN KEY (idArticle)
+	REFERENCES Article(idArticle);
+
+ALTER TABLE Contenir
+	ADD CONSTRAINT Contenir_Commande1_FK
+	FOREIGN KEY (idCommande)
+	REFERENCES Commande(idCommande);
+
+ALTER TABLE Personnel
+	ADD CONSTRAINT Personnel_Personne0_FK
+	FOREIGN KEY (idPersonne)
+	REFERENCES Personne(idPersonne);
+
+ALTER TABLE Personnel
+	ADD CONSTRAINT Personnel_Personnel1_FK
+	FOREIGN KEY (idPersonnel_Hierarchie)
+	REFERENCES Personnel(idPersonnel);
+
+ALTER TABLE Personnel 
+	ADD CONSTRAINT Personnel_Personne0_AK 
+	UNIQUE (idPersonne);
+
+
+
+5 Voilà votre base de données est initialisée.
