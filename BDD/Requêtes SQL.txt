@@ -1,0 +1,165 @@
+
+/*------------------------------------------------------------
+*        Script SQLSERVER 
+------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+-- Table: Adresse
+------------------------------------------------------------*/
+CREATE TABLE Adresse(
+	idAdresse            INT IDENTITY (1,1) NOT NULL ,
+	ligne                TEXT  NOT NULL ,
+	code_postale         TEXT  NOT NULL ,
+	ville                TEXT  NOT NULL ,
+	pays                 TEXT  NOT NULL ,
+	AdresseLivraison     bit  NOT NULL ,
+	AdresseFacturation   bit  NOT NULL ,
+	activite_adresse     bit  NOT NULL  ,
+	CONSTRAINT Adresse_PK PRIMARY KEY (idAdresse)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Article
+------------------------------------------------------------*/
+CREATE TABLE Article(
+	idArticle                   INT IDENTITY (1,1) NOT NULL ,
+	nom_article                 TEXT  NOT NULL ,
+	stock_article               INT  NOT NULL ,
+	seuil_reapprovisionnement   INT  NOT NULL ,
+	prix_achat                  FLOAT  NOT NULL ,
+	activite_article            bit  NOT NULL  ,
+	CONSTRAINT Article_PK PRIMARY KEY (idArticle)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Personne
+------------------------------------------------------------*/
+CREATE TABLE Personne(
+	idPersonne        INT IDENTITY (1,1) NOT NULL ,
+	nom_personne      TEXT  NOT NULL ,
+	prenom_personne   TEXT  NOT NULL  ,
+	CONSTRAINT Personne_PK PRIMARY KEY (idPersonne)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Client
+------------------------------------------------------------*/
+CREATE TABLE Client(
+	code_client             INT  NOT NULL ,
+	numero_service_client   TEXT  NOT NULL ,
+	date_naissance          DATETIME NOT NULL ,
+	activite_client         bit  NOT NULL ,
+	idPersonne              INT  NOT NULL  ,
+	CONSTRAINT Client_PK PRIMARY KEY (code_client)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Commande
+------------------------------------------------------------*/
+CREATE TABLE Commande(
+	idCommande              INT IDENTITY (1,1) NOT NULL ,
+	reference_commande      TEXT  NOT NULL ,
+	date_emission           DATETIME NOT NULL ,
+	date_livraison          DATETIME NOT NULL ,
+	type_paiement           TEXT  NOT NULL ,
+	code_client             INT  NOT NULL ,
+	idAdresse_livraison     INT  NOT NULL ,
+	idAdresse_facturation   INT  NOT NULL  ,
+	CONSTRAINT Commande_PK PRIMARY KEY (idCommande)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Tarif_lot
+------------------------------------------------------------*/
+CREATE TABLE Tarif_lot(
+	id_tarif_lot       INT IDENTITY (1,1) NOT NULL ,
+	prix_unitaire      FLOAT  NOT NULL ,
+	quantite_minimum   INT  NOT NULL ,
+	idArticle          INT  NOT NULL  ,
+	CONSTRAINT Tarif_lot_PK PRIMARY KEY (id_tarif_lot)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Facture
+------------------------------------------------------------*/
+CREATE TABLE Facture(
+	idFacture                     INT IDENTITY (1,1) NOT NULL ,
+	reference_commande_facture    TEXT  NOT NULL ,
+	date_emission_facture         DATETIME NOT NULL ,
+	date_livraison_facture        DATETIME NOT NULL ,
+	type_paiement_facture         TEXT  NOT NULL ,
+	Total_HT                      FLOAT  NOT NULL ,
+	Total_TTC                     FLOAT  NOT NULL ,
+	Total_TVA                     FLOAT  NOT NULL ,
+	date_solde_paiement_facture   DATETIME  ,
+	idCommande                    INT  NOT NULL  ,
+	CONSTRAINT Facture_PK PRIMARY KEY (idFacture)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Paiement
+------------------------------------------------------------*/
+CREATE TABLE Paiement(
+	idPaiement            INT IDENTITY (1,1) NOT NULL ,
+	date_solde_paiement   DATETIME NOT NULL ,
+	montant_total_HT      FLOAT  NOT NULL ,
+	idFacture             INT  NOT NULL  ,
+	CONSTRAINT Paiement_PK PRIMARY KEY (idPaiement)
+);
+
+
+/*------------------------------------------------------------
+-- Table: ligne_facture
+------------------------------------------------------------*/
+CREATE TABLE ligne_facture(
+	id_ligne_facture              INT IDENTITY (1,1) NOT NULL ,
+	designation                   TEXT  NOT NULL ,
+	quantite                      INT  NOT NULL ,
+	prix_unitaire_ligne_facture   FLOAT  NOT NULL ,
+	TVA                           FLOAT  NOT NULL ,
+	idFacture                     INT  NOT NULL  ,
+	CONSTRAINT ligne_facture_PK PRIMARY KEY (id_ligne_facture)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Posseder3
+------------------------------------------------------------*/
+CREATE TABLE Posseder3(
+	idAdresse    INT  NOT NULL ,
+	idPersonne   INT  NOT NULL  ,
+	CONSTRAINT Posseder3_PK PRIMARY KEY (idAdresse,idPersonne)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Contenir
+------------------------------------------------------------*/
+CREATE TABLE Contenir(
+	idArticle                   INT  NOT NULL ,
+	idCommande                  INT  NOT NULL ,
+	quantite_article_commande   INT  NOT NULL ,
+	remise_prix                 FLOAT  NOT NULL  ,
+	CONSTRAINT Contenir_PK PRIMARY KEY (idArticle,idCommande)
+);
+
+
+/*------------------------------------------------------------
+-- Table: Personnel
+------------------------------------------------------------*/
+CREATE TABLE Personnel(
+	idPersonnel              INT IDENTITY (1,1) NOT NULL ,
+	date_embauche            DATETIME NOT NULL ,
+	Poste                    TEXT  NOT NULL ,
+	activite_personnel       bit  NOT NULL ,
+	idPersonne               INT  NOT NULL ,
+	idPersonnel_Hierarchie   INT    ,
+	CONSTRAINT Personnel_PK PRIMARY KEY (idPersonnel)
+);
