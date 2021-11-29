@@ -1,5 +1,5 @@
 idPersonnel,date_embauche,Poste,activite_personnel,idPersonne,idPersonnel_Hierarchie
-6,2009-02-09 03:03:00,Legal Manager,False,16,
+6,2009-02-09 03:03:00,Legal Manager,False,16,10
 10,1955-12-21 00:42:00,Hospital Quality Coordinator,False,17,29
 11,1995-04-02 01:10:00,Operator Tool Machine,True,18,10
 25,1953-03-11 04:58:00,Electric Meter Installer,True,19,29
