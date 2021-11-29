@@ -123,8 +123,8 @@
     <ClCompile Include="Cad.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="Map.cpp" />
-    <ClCompile Include="Services.cpp" />
+    <ClCompile Include="MapClient.cpp" />
+    <ClCompile Include="ServicesClient.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cad.h" />
@@ -134,7 +134,7 @@
     <ClInclude Include="GestionPersonnel.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Map.h" />
+    <ClInclude Include="MapClient.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -147,8 +147,7 @@
     <ClInclude Include="GestionCommande.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Personne.h" />
-    <ClInclude Include="Services.h" />
+    <ClInclude Include="ServicesClient.h" />
     <ClInclude Include="STATISTIQUES.h">
       <FileType>CppForm</FileType>
     </ClInclude>

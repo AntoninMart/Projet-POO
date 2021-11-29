@@ -2,7 +2,7 @@
 
 compData::Cad::Cad(void)
 {
-	this->sCnx = "Data Source=localhost;Initial Catalog=ProjetPOOBDD;User ID=SA;Password=Plexiglass";
+	this->sCnx = "Data Source=localhost;Initial Catalog=ProjetPOOBDD;User ID=SA;Password=Plastique";
 
 	this->sSql = "Rien";
 

@@ -1,8 +1,7 @@
 #pragma once
-#include "Services.h"
+#include "ServicesClient.h"
 #include <iostream>
 #include <string>
-#include "Personne.h"
 
 namespace Project1 {
 
@@ -42,7 +41,6 @@ namespace Project1 {
 	private: System::Windows::Forms::DataGridView^ dgv_enr;
 	protected:
 	private: System::Windows::Forms::Button^ btn_retour;
-	private: System::Windows::Forms::Button^ btn_load;
 	private: System::Windows::Forms::Button^ btn_insert;
 	private: System::Windows::Forms::Button^ btn_delete;
 	private: System::Windows::Forms::Button^ btn_update;
@@ -88,7 +86,6 @@ namespace Project1 {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(GestionClient::typeid));
 			this->dgv_enr = (gcnew System::Windows::Forms::DataGridView());
-			this->btn_load = (gcnew System::Windows::Forms::Button());
 			this->btn_insert = (gcnew System::Windows::Forms::Button());
 			this->btn_delete = (gcnew System::Windows::Forms::Button());
 			this->btn_update = (gcnew System::Windows::Forms::Button());
@@ -116,17 +113,6 @@ namespace Project1 {
 			this->dgv_enr->Size = System::Drawing::Size(629, 185);
 			this->dgv_enr->TabIndex = 0;
 			this->dgv_enr->CellClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &GestionClient::dgv_enr_CellClick);
-			// 
-			// btn_load
-			// 
-			this->btn_load->Location = System::Drawing::Point(26, 375);
-			this->btn_load->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
-			this->btn_load->Name = L"btn_load";
-			this->btn_load->Size = System::Drawing::Size(100, 159);
-			this->btn_load->TabIndex = 1;
-			this->btn_load->Text = L"Load DB";
-			this->btn_load->UseVisualStyleBackColor = true;
-			this->btn_load->Click += gcnew System::EventHandler(this, &GestionClient::btn_load_Click);
 			// 
 			// btn_insert
 			// 
@@ -235,7 +221,6 @@ namespace Project1 {
 			this->Controls->Add(this->btn_update);
 			this->Controls->Add(this->btn_delete);
 			this->Controls->Add(this->btn_insert);
-			this->Controls->Add(this->btn_load);
 			this->Controls->Add(this->dgv_enr);
 			this->Controls->Add(this->btn_retour);
 			this->Controls->Add(this->pictureBox1);
@@ -254,9 +239,6 @@ namespace Project1 {
 #pragma endregion
 	private: System::Void btn_retour_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();
-	}
-	private: System::Void btn_load_Click(System::Object^ sender, System::EventArgs^ e)
-	{
 	}
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e)
 	{
