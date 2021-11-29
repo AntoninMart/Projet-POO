@@ -1,13 +1,12 @@
   Project1.GestionArticle.resources - Embedded, ContainedInManifestFile, 
   Project1.GestionPersonnel.resources - Embedded, ContainedInManifestFile, 
-  Project1.GestionStock.resources - Embedded, ContainedInManifestFile, 
   Project1.MyForm.resources - Embedded, ContainedInManifestFile, 
   Project1.MyForm1.resources - Embedded, ContainedInManifestFile, 
-  Project1.MyForm2.resources - Embedded, ContainedInManifestFile, 
-  Project1.MyForm3.resources - Embedded, ContainedInManifestFile, 
+  Project1.GestionClient.resources - Embedded, ContainedInManifestFile, 
+  Project1.GestionCommande.resources - Embedded, ContainedInManifestFile, 
   Project1.STATISTIQUES.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
-Assembly Project1, Version=0.0.*, Culture=Langue indifférente (Pays indifférent): 
+Assembly Project1, Version=1.0.*, Culture=Langue indifférente (Pays indifférent): 
 	hash=SHA1, flags=PublicKey
 Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
@@ -21,22 +20,19 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class Project1.STATISTIQUES: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Project1.GestionArticle: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Project1.GestionClient: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Project1.GestionCommande: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Project1.GestionPersonnel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class Project1.GestionStock: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class Project1.MyForm2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class Project1.MyForm3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class Project1.STATISTIQUES: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Project1.MyForm1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

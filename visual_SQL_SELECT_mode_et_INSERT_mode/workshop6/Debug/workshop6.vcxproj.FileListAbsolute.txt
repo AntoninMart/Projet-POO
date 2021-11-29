@@ -1,3 +1,0 @@
-C:\Users\benoi\source\repos\workshop6\workshop6\Debug\workshop6.vcxproj.AssemblyReference.cache
-C:\Users\benoi\source\repos\workshop6\workshop6\Debug\workshop6.MyForm.resources
-C:\Users\benoi\source\repos\workshop6\workshop6\Debug\workshop6.vcxproj.GenerateResource.cache

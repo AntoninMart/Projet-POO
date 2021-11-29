@@ -16,10 +16,9 @@ C:\Users\anton\Desktop\Project1\Project1\Debug\Project1.STATISTIQUES.resources
 C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.vcxproj.AssemblyReference.cache
 C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.GestionArticle.resources
 C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.GestionPersonnel.resources
-C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.GestionStock.resources
 C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.MyForm.resources
 C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.MyForm1.resources
-C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.MyForm2.resources
-C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.MyForm3.resources
 C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.STATISTIQUES.resources
 C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.vcxproj.GenerateResource.cache
+C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.GestionClient.resources
+C:\Users\32pyr\OneDrive\Bureau\CESI\Cours A2\semestre 1\02 Programmation orientée objet\Projet\GitHub\Projet POO\Project1\Project1\Debug\Project1.GestionCommande.resources

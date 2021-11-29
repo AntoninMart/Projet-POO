@@ -120,17 +120,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GestionArticle.cpp" />
-    <ClCompile Include="GestionPersonnel.cpp" />
-    <ClCompile Include="STATISTIQUES.cpp" />
+    <ClCompile Include="Cad.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Services.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cad.h" />
     <ClInclude Include="GestionArticle.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="GestionPersonnel.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Map.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -143,6 +147,8 @@
     <ClInclude Include="GestionCommande.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Personne.h" />
+    <ClInclude Include="Services.h" />
     <ClInclude Include="STATISTIQUES.h">
       <FileType>CppForm</FileType>
     </ClInclude>
