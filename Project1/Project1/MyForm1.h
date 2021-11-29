@@ -1,10 +1,9 @@
 #pragma once
-#include "GestionPersonnel.h"
-#include "MyForm2.h"
-#include "MyForm3.h"
-#include "GestionStock.h"
 #include "STATISTIQUES.h"
 #include "GestionArticle.h"
+#include "GestionClient.h"
+#include "GestionCommande.h"
+#include "GestionPersonnel.h"
 
 //#include "MyForm.h"
 
@@ -48,7 +47,6 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button5;
 	private: System::Windows::Forms::Button^ button6;
-	private: System::Windows::Forms::Button^ button7;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 	protected:
@@ -84,7 +82,6 @@ namespace Project1 {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button6 = (gcnew System::Windows::Forms::Button());
-			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -165,7 +162,7 @@ namespace Project1 {
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(239, 120);
 			this->button5->TabIndex = 4;
-			this->button5->Text = L"Gestion stock";
+			this->button5->Text = L"Gestion article";
 			this->button5->UseVisualStyleBackColor = false;
 			this->button5->Click += gcnew System::EventHandler(this, &MyForm1::button5_Click);
 			// 
@@ -177,29 +174,13 @@ namespace Project1 {
 			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button6->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->button6->Location = System::Drawing::Point(103, 392);
+			this->button6->Location = System::Drawing::Point(279, 392);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(240, 120);
 			this->button6->TabIndex = 5;
 			this->button6->Text = L"STATISTIQUES";
 			this->button6->UseVisualStyleBackColor = false;
 			this->button6->Click += gcnew System::EventHandler(this, &MyForm1::button6_Click);
-			// 
-			// button7
-			// 
-			this->button7->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(36)), static_cast<System::Int32>(static_cast<System::Byte>(52)),
-				static_cast<System::Int32>(static_cast<System::Byte>(71)));
-			this->button7->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button7->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->button7->Location = System::Drawing::Point(444, 392);
-			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(237, 119);
-			this->button7->TabIndex = 6;
-			this->button7->Text = L"Gestion article";
-			this->button7->UseVisualStyleBackColor = false;
-			this->button7->Click += gcnew System::EventHandler(this, &MyForm1::button7_Click);
 			// 
 			// pictureBox1
 			// 
@@ -217,7 +198,6 @@ namespace Project1 {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(16)), static_cast<System::Int32>(static_cast<System::Byte>(17)),
 				static_cast<System::Int32>(static_cast<System::Byte>(32)));
 			this->ClientSize = System::Drawing::Size(800, 600);
-			this->Controls->Add(this->button7);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
@@ -249,19 +229,19 @@ namespace Project1 {
 	}
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Hide();
-		Project1::MyForm2 monFormulaire;
+		Project1::GestionClient monFormulaire;
 		monFormulaire.ShowDialog();
 		this->Show();
 	}
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Hide();
-		Project1::MyForm2 monFormulaire;
+		Project1::GestionCommande monFormulaire;
 		monFormulaire.ShowDialog();
 		this->Show();
 	}
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Hide();
-		Project1::GestionStock monFormulaire;
+		Project1::GestionArticle monFormulaire;
 		monFormulaire.ShowDialog();
 		this->Show();
 	}
@@ -270,12 +250,6 @@ private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e
 		Project1::STATISTIQUES monFormulaire;
 		monFormulaire.ShowDialog();
 		this->Show();
-	}
-private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->Hide();
-		Project1::GestionArticle monFormulaire;
-		monFormulaire.ShowDialog();
-		this->Show();	
 	}
 };
 }

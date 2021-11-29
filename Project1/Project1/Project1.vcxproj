@@ -122,11 +122,6 @@
   <ItemGroup>
     <ClCompile Include="GestionArticle.cpp" />
     <ClCompile Include="GestionPersonnel.cpp" />
-    <ClCompile Include="GestionStock.cpp" />
-    <ClCompile Include="MyForm.cpp" />
-    <ClCompile Include="MyForm1.cpp" />
-    <ClCompile Include="MyForm2.cpp" />
-    <ClCompile Include="MyForm3.cpp" />
     <ClCompile Include="STATISTIQUES.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -136,19 +131,16 @@
     <ClInclude Include="GestionPersonnel.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="GestionStock.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MyForm1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="MyForm2.h">
+    <ClInclude Include="GestionClient.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="MyForm3.h">
+    <ClInclude Include="GestionCommande.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="STATISTIQUES.h">
@@ -162,20 +154,17 @@
     <EmbeddedResource Include="GestionPersonnel.resx">
       <DependentUpon>GestionPersonnel.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionStock.resx">
-      <DependentUpon>GestionStock.h</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm1.resx">
       <DependentUpon>MyForm1.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForm2.resx">
-      <DependentUpon>MyForm2.h</DependentUpon>
+    <EmbeddedResource Include="GestionClient.resx">
+      <DependentUpon>GestionClient.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForm3.resx">
-      <DependentUpon>MyForm3.h</DependentUpon>
+    <EmbeddedResource Include="GestionCommande.resx">
+      <DependentUpon>GestionCommande.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="STATISTIQUES.resx">
       <DependentUpon>STATISTIQUES.h</DependentUpon>
